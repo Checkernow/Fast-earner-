@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  </head>
+  <body style="text-align:center; background:#020617; color:white; padding:40px;">
+
+  <h1>📊 Wallet Dashboard</h1>
+
+  <p>Welcome back!</p>
+
+  <button onclick="goBalance()">View Balance</button>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+  function goBalance() {
+    window.location.href = "balance.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("userSeed");
+        window.location.href = "index.html";
+        }
+        </script>
+
+        </body>
+        </html>

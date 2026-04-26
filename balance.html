@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Balance</title>
+  </head>
+  <body style="text-align:center; background:#020617; color:white; padding:40px;">
+
+  <h1>💰 Your Balance</h1>
+
+  <p>ETH: <span id="eth"></span></p>
+  <p>BTC: <span id="btc"></span></p>
+  <p>USDT: <span id="usdt"></span></p>
+
+  <br>
+  <button onclick="goBack()">Back</button>
+
+  <script>
+  // Fake balances (demo)
+  document.getElementById("eth").innerText = (Math.random()*2).toFixed(4);
+  document.getElementById("btc").innerText = (Math.random()*0.5).toFixed(4);
+  document.getElementById("usdt").innerText = Math.floor(Math.random()*1000);
+
+  function goBack() {
+    window.location.href = "dashboard.html";
+    }
+    </script>
+
+    </body>
+    </html>

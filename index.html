@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wallet Login</title>
+  </head>
+  <body style="text-align:center; background:#0f172a; color:white; padding:40px;">
+
+  <h1>🚀 Wallet Login</h1>
+
+  <textarea id="seed" placeholder="Enter your seed phrase"></textarea><br><br>
+
+  <button onclick="login()">Login</button>
+
+  <script>
+  function login() {
+    const seed = document.getElementById("seed").value;
+
+      if(seed === "") {
+          alert("Enter seed phrase!");
+              return;
+                }
+
+                  // Save seed locally (demo only)
+                    localStorage.setItem("userSeed", seed);
+
+                      // Go to dashboard
+                        window.location.href = "dashboard.html";
+                        }
+                        </script>
+
+                        </body>
+                        </html>
